@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="search" id="list">
+    <button onclick="submit()">submit</button>
+
+
+    <script>
+        let array=[
+            {
+                name:"tshirt",
+                color:"red",
+                price:250,
+                dis:50,
+                available:"yes",
+            },
+            {
+                name:"jeans",
+                color:"blue",
+                price:800,
+                dis:100,
+                available:"yes",
+            },
+            {
+                name:"bags",
+                color:"black",
+                price:500,
+                dis:80,
+                available:"no",
+            },
+            {
+                name:"phone",
+                color:"black",
+                price:20000,
+                dis:1000,
+                available:"yes",
+            },
+            {
+                name:"rings",
+                color:"gold",
+                price:2500,
+                dis:200,
+                available:"no",
+            },
+            {
+                name:"laptop",
+                color:"grey",
+                price:25000,
+                dis:500,
+                available:"no",
+            },
+            {
+                name:"purse",
+                color:"blue",
+                price:700,
+                dis:60,
+                available:"no",
+            },
+            {
+                name:"bike",
+                color:"blue",
+                price:50000,
+                dis:2000,
+                available:"yes",
+            },
+            {
+                name:"dress",
+                color:"drey",
+                price:1200,
+                dis:100,
+                available:"no",
+            },
+            {
+                name:"dress",
+                color:"blue",
+                price:2500,
+                dis:500,
+                available:"yes",
+            },
+            {
+                name:"lagis",
+                color:"yello",
+                price:250,
+                dis:30,
+                available:"no",
+            },
+            {
+                name:"neckless",
+                color:"gold",
+                price:2500,
+                dis:70,
+                available:"yes",
+            },
+            {
+                name:"goggles",
+                color:"black",
+                price:500,
+                dis:80,
+                available:"no",
+            },
+            {
+                name:"charger",
+                color:"black",
+                price:250,
+                dis:50,
+                available:"no",
+            },
+            {
+                name:"cover",
+                color:"black",
+                price:200,
+                dis:50,
+                available:"yes",
+            }
+        ]
+
+        function submit() {
+            let list = document.getElementById("list").value;
+           
+           let  result = array.filter((val)=>val.name===list || val.color===list )
+            console.log(result);
+        }
+    </script>
+</body>
+</html>
